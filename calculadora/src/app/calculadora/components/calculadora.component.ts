@@ -38,10 +38,8 @@ export class CalculadoraComponent implements OnInit {
   }
 
   //retorna o valor concatenado. Trata o separador decimal
- 
   concatenarNumero(numAtual: string, numConcat: string): string {
-    //caso contenha apenas '0' ou null, reinicia p valor
-    if (numAtual === '0' || numAtual === null) {
+    if (numAtual === '0' || numAtual === null) {  //caso contenha apenas '0' ou null, reinicia p valor
       numAtual = '';
     }
 
