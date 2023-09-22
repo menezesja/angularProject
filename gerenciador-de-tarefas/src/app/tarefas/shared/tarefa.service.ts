@@ -7,7 +7,7 @@ import { JsonPipe } from '@angular/common';
 })
 export class TarefaService {
 
-  constructor() { }
+  constructor() { } //regras de negócio
 
   listarTodos(): Tarefa[] { //dados url/componente, valor null
     const tarefas = localStorage['tarefas']; //key
