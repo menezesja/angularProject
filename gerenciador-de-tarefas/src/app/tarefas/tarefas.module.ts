@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TarefaService } from './shared';
 import { ListarTarefasComponent } from './listar';
 
+
 @NgModule({
   declarations: [
     ListarTarefasComponent
