@@ -13,9 +13,8 @@
                     A tarefa deve conter ao menos 5 caracteres.
                 </div>
             </div>
-            &nbsp;
         </div>
-        <div class="form-group text-center">
+        <div class="form-group text-center" [ngClass]="{'my-2': nome.errors}">
             <input type="submit" class="btn btn-success" (click)="cadastrar()" value="Cadastrar" [disabled]="!formTarefa.form.valid">
             &nbsp;
             <a [routerLink]="['/tarefas']" class="btn btn-secondary">
