@@ -12,7 +12,7 @@
             </th>
         </tr>
         <tr *ngFor="let tarefa of tarefas">
-            <td style="vertical-align: middle;" [class.table-success]="!tarefa.concluida">
+            <td style="vertical-align: middle;" [tarefaConcluida]="tarefa.concluida" [class.table-success]="!tarefa.concluida">
                 {{ tarefa.nome }}
             </td>
             <td style="width: 70px" class="text-center"> 
