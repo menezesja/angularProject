@@ -5,13 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { TarefaService } from './shared';
 import { ListarTarefasComponent } from './listar';
 import { CadastrarTarefaComponent } from './cadastrar';
+import { EditarTarefaComponent } from './editar';
 
 
 
 @NgModule({
   declarations: [
     ListarTarefasComponent,
-    CadastrarTarefaComponent
+    CadastrarTarefaComponent,
+    EditarTarefaComponent
   ],
   imports: [
     CommonModule,
