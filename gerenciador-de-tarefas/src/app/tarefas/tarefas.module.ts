@@ -6,6 +6,7 @@ import { TarefaService } from './shared';
 import { ListarTarefasComponent } from './listar';
 import { CadastrarTarefaComponent } from './cadastrar';
 import { EditarTarefaComponent } from './editar';
+import { TarefaConcluidaDirective } from './shared/tarefa-concluida.directive';
 
 
 
@@ -13,7 +14,8 @@ import { EditarTarefaComponent } from './editar';
   declarations: [
     ListarTarefasComponent,
     CadastrarTarefaComponent,
-    EditarTarefaComponent
+    EditarTarefaComponent,
+    TarefaConcluidaDirective
   ],
   imports: [
     CommonModule,
