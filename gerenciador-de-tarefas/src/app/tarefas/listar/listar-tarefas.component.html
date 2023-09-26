@@ -12,7 +12,7 @@
             </th>
         </tr>
         <tr *ngFor="let tarefa of tarefas">
-            <td [class.table-success]="!tarefa.concluida">
+            <td style="vertical-align: middle;" [class.table-success]="!tarefa.concluida">
                 {{ tarefa.nome }}
             </td>
             <td style="width: 70px" class="text-center"> 
@@ -23,7 +23,7 @@
                     <span class="fa-solid fa-pen" aria-hidden="true"></span> Editar
                 </a>
                 &nbsp;&nbsp;
-                <a href="#" title="Remover" alt="Remover" class="btn btn-sm btn-danger">
+                <a href="#" title="Remover" alt="Remover" class="btn btn-sm btn-danger" (click)="remover($event, tarefa)">
                     <span class="fa-solid fa-xmark" aria-hidden="true"></span> Remover
                 </a>
             </td>
