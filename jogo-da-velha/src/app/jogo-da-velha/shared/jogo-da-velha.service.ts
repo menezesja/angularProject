@@ -6,7 +6,7 @@ export class JogoDaVelhaService {  //regras de negócios do jogo da velha
   //contantes para representar as peças do jogo da velha
   private readonly TAM_TAB: number = 3;
   private readonly X: number = 1;
-  private readonly 0: number = 2
+  private readonly O: number = 2
   private readonly VAZIO: number = 0;
 
   //atributos para controle de jogo
@@ -19,7 +19,7 @@ export class JogoDaVelhaService {  //regras de negócios do jogo da velha
   private _showInicio: boolean;
   private _showTabuleiro: boolean;
   private _showFinal: boolean;
-  O: number;
+
 
   constructor() { }
 
