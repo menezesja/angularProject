@@ -2,11 +2,11 @@
 
     <h2>Jogo da Velha</h2>
 
-    <div class="principal"> <!--Tela Inicial-->
-        <a href="#" class="botao">Iniciar</a>
+    <div class="principal" *ngIf="showInicio"> <!--Tela Inicial-->
+        <a href="#" class="botao" (click)="iniciarJogo()">Iniciar</a>
     </div> <!-- fim tela inicial -->
 
-    <div> <!--Tabuleiro-->
+    <div *ngIf="showTabuleiro"> <!--Tabuleiro-->
         <ul>
             <li class="kz-border-bottom kz-border-right"></li>
             <li class="kz-border-bottom kz-border-right"></li>
@@ -20,7 +20,7 @@
         </ul>
     </div> <!-- fim tabuleiro --> 
 
-    <div> <!-- tela final -->
+    <div *ngIf="showFinal"> <!-- tela final -->
         <span>
             <p>Você venceu!!!</p>
             <p>Você perdeu...</p>

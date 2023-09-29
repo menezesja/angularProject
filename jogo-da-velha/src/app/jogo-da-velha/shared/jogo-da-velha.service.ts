@@ -75,7 +75,7 @@ export class JogoDaVelhaService {  //regras de negócios do jogo da velha
       return;
     }
 
-    this.tabuleiro[posX][posY] = this.jogador;
+    this.tabuleiro[posX][posY] = this._jogador;
     this.numMovimentos++;
     this.vitoria = this.fimJogo(posX, posY, this.tabuleiro, this._jogador);
     this._jogador = (this._jogador === this.X) ? this.O : this.X;
