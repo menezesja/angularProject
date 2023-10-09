@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MoedaService } from '../services';
 import { ConversorComponent } from './conversor.component';
 
 describe('ConversorComponent', () => {
@@ -8,7 +8,8 @@ describe('ConversorComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ConversorComponent]
+      declarations: [ConversorComponent],
+      providers: [MoedaService]
     });
     fixture = TestBed.createComponent(ConversorComponent);
     component = fixture.componentInstance;
