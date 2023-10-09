@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class JogoDaVelhaService {  //regras de negócios do jogo da velha
  
   //contantes para representar as peças do jogo da velha
