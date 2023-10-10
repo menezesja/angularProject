@@ -4,7 +4,7 @@
 	<div class="card-header text-bg-success">Selecione a moeda a ser convertida</div>
 	<div class="card-body text-center ">
 	  <form #conversaoForm="ngForm" class="form-inline">
-		<input class="form-control-sm border text-end" type="text" name="valor"  placeholder="0" [(ngModel)]="conversao.valor" style="margin: 0 6px;" required>
+		<input class="form-control-sm border text-end" type="text" name="valor"  placeholder="0" [(ngModel)]="conversao.valor" numero style="margin: 0 6px;" required>
 		<select name="moedaDe" class="form-select-sm" [(ngModel)]="conversao.moedaDe" required>
 			<option *ngFor="let moeda of moedas" [value]="moeda.sigla">{{ moeda.sigla }} - {{ moeda.descricao }}</option>
 		</select>
