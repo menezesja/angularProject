@@ -17,14 +17,14 @@ export class ConversorService {
     return this.http.get(this.BASE_URL + params);
   }
 
-  cotacaPara(conversaoResponse: ConversaoResponse, conversao: Conversao): number {
+  cotacaoPara(conversaoResponse: ConversaoResponse, conversao: Conversao): number {
     if (conversaoResponse === undefined){
       return 0;
     }
     return conversaoResponse.rates[conversao.moedaPara];
   }
 
-  cotacaDe(conversaoResponse: ConversaoResponse, conversao: Conversao): string {
+  cotacaoDe(conversaoResponse: ConversaoResponse, conversao: Conversao): string {
     if (conversaoResponse === undefined){
       return '0';
     }

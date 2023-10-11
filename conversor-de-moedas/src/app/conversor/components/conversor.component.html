@@ -12,7 +12,8 @@
 		<select name="moedaPara" class="form-select-sm" [(ngModel)]="conversao.moedaPara" required> 
 			<option *ngFor="let moeda of moedas" [value]="moeda.sigla">{{ moeda.sigla }} - {{ moeda.descricao }}</option>
 		</select>
-		<input type="submit" value="Converter" class="btn btn-success" data-toggle="modal" data-target="#modalCotacao" (click)="converter()" [disabled]="!conversaoForm.form.valid" style="margin: 0 6px;">
+		<input type="submit" value="Converter" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCotacao" (click)="converter()" [disabled]="!conversaoForm.form.valid" style="margin: 0 6px;">
 	  </form>
 	 </div>
+	 <modal-cotacao [id]="'modalCotacao'" [conversaoResponse]="conversaoResponse" [conversao]="conversao" (onConfirm)="init()"></modal-cotacao>
 </div>
