@@ -1,0 +1,31 @@
+<div class="modal" [id]="id" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Cotação em {{ dataCotacao | dataBr }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div>
+			<h2>
+                {{ conversao.valor }} 
+				{{ conversao.moedaDe }} 
+				= 
+				{{ valorConvertido }} 
+				{{ conversao.moedaPara }}
+            </h2>
+			<p>
+                1 {{ conversao.moedaPara }} = 
+				{{ cotacaoPara }} {{ conversao.moedaDe }} 
+				/
+				1 {{ conversao.moedaDe }} = 
+				{{ cotacaoDe }} {{ conversao.moedaPara }} 
+            </p>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal" (click)="novaConsulta()">Nova consulta</button>
+      </div>
+    </div>
+  </div>
+</div>
